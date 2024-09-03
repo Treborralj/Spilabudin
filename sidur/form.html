@@ -16,7 +16,80 @@
      </ul>
     </nav>
     <main id="efni">
-
+      <h3>Viðburður</h3>
+      <form>
+        <label for="viðburðar-val">Hvaða viðburð villtu koma á?</label>
+        <select id="viðburðar-val" name="viðburðar-val">
+          <option value="Púslkvöld">Púslkvöld</option>
+          <option value="Ticket to Ride">Ticket to Ride</option>
+        </select>
+        <label>
+          Hvenær?
+        <input type="date" id="dagsetning">
+        </label>
+        <label>
+          Klukkan hvað?
+          <input type="time" min="10:00" max="23:00" id="tímasetning">
+        </label>
+        <label for="fjöldaval">Hve mörg?</label>
+          <select id="fjöldaval" name="fjöldaval">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+          <label>
+            Villtu taka eitthvað fram?
+            <textarea name="upplýsingar" id="upplýsingar"></textarea>
+          </label>
+      </form>
+      <form>
+      <h3>Panta mat</h3>
+      <label for="mata-val">Viltu einhvern mat?</label>
+      <select id="mata-val" name="mata-val">
+        <option value="pizzusneið og gos">Pizzusneið og gos</option>
+        <option value="Kaffi og kaka">Kaffi og kaka</option>
+        <option value="Engan mat">Engan mat</option>
+      </select>
+      <lable>
+        Ofnæmi?
+        <input name="ofnæmi" type="checkbox">
+      </lable>
+      <label>
+        Annað sem við eigum að vita?
+        <textarea name="eigum að vita" id="eigum að vita"></textarea>
+      </label>
+      </form>
+      <h3>Þínar upplýsingar</h3>
+      <form>
+        <label>
+          Nafn:
+          <input type="text" id="nafn" required>
+        </label>
+        <label>
+          Netfang:
+          <input type="text" id="netfang" placeholder="daemi@daemi.is" required>
+        </label>
+        <label>
+          Sími:
+          <input type="text" id="simi" placeholder="000-0000" required>
+        </label>
+      </form>
+      <h3>Samþykkja og panta</h3>
+      <form>
+        <lable>
+          Ég samþykki skilmála Spilabúðarinnar
+          <input name="skilmálar" type="checkbox">
+        </lable>
+        <button>Panta</button>
+      </form>
+      <a href="../index.html">Aftur á forsíðu</a>
     </main>
     <footer>
         <h4>Opnunartími</h4>
