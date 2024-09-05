@@ -2,18 +2,22 @@
 <html lang="is">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="Hægt er að skrá sig á marga geggjaða viðburði hjá spilabúðinni"/>
+    <meta property="og:title" content="Skráðu þig á viðburði hjá spilabúðinni"/>
+    <meta property="og:description" content="Hægt er að skrá sig á marga geggjaða viðburði hjá spilabúðinni"/>
+    <meta property="og:image" content="..myndir/sharing.jpg">
     <title>Skráning á viðburði</title>
   </head>
   <body>
     <h1>Skráning á viðburði</h1>
-    <a href="#efni">Beint í efni</a>
-    <nav> 
-     <ul>
-      <li><a href="../index.html">Forsíða</a></li>
-      <li><a href="spil.html">Spil</a></li>
-      <li><a href="vidburdir.html">Viðburðir</a></li>
-      <li><strong>Skráning á viðburði</strong></li>
-     </ul>
+    <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Forsíða</a></li>
+        <li><a href="spil.html">Spil</a></li>
+        <li><a href="vidburdir.html">Viðburðir</a></li>
+        <li><strong>Skráning á viðburði</strong></li>
+      </ul>
     </nav>
     <main id="efni">
       <h3>Viðburður</h3>
@@ -25,73 +29,94 @@
         </select>
         <label>
           Hvenær?
-        <input type="date" id="dagsetning">
+          <input type="date" id="dagsetning" />
         </label>
-        <label>
-          Klukkan hvað?
-          <input type="time" min="10:00" max="23:00" id="tímasetning">
-        </label>
+
+        <label for="timaval">Klukkan hvað?</label>
+        <select id="timaval" name="timaval">
+          <option id="10-11">10:00-11:00</option>
+          <option id="11-12">11:00-12:00</option>
+          <option id="12-13">12:00-13:00</option>
+          <option id="13-14">13:00-14:00</option>
+          <option id="14-15">14:00-15:00</option>
+          <option id="15-16">15:00-16:00</option>
+          <option id="16-17">16:00-17:00</option>
+          <option id="17-18">17:00-18:00</option>
+          <option id="18-19">18:00-19:00</option>
+          <option id="19-20">19:00-20:00</option>
+          <option id="20-21">20:00-21:00</option>
+          <option id="21-22">21:00-22:00</option>
+          <option id="22-23">22:00-23:00</option>
+          <option id="23-00">23:00-00:00</option>
+        </select>
+
         <label for="fjöldaval">Hve mörg?</label>
-          <select id="fjöldaval" name="fjöldaval">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-            <option value="7">7</option>
-            <option value="8">8</option>
-            <option value="9">9</option>
-            <option value="10">10</option>
-          </select>
-          <label>
-            Villtu taka eitthvað fram?
-            <textarea name="upplýsingar" id="upplýsingar"></textarea>
-          </label>
+        <select id="fjöldaval" name="fjöldaval">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <label>
+          Villtu taka eitthvað fram?
+          <textarea name="upplýsingar" id="upplýsingar"></textarea>
+        </label>
       </form>
       <form>
-      <h3>Panta mat</h3>
-      <label for="mata-val">Viltu einhvern mat?</label>
-      <select id="mata-val" name="mata-val">
-        <option value="pizzusneið og gos">Pizzusneið og gos</option>
-        <option value="Kaffi og kaka">Kaffi og kaka</option>
-        <option value="Engan mat">Engan mat</option>
-      </select>
-      <lable>
-        Ofnæmi?
-        <input name="ofnæmi" type="checkbox">
-      </lable>
-      <label>
-        Annað sem við eigum að vita?
-        <textarea name="eigum að vita" id="eigum að vita"></textarea>
-      </label>
+        <h3>Panta mat</h3>
+        <label for="mata-val">Viltu einhvern mat?</label>
+        <select id="mata-val" name="mata-val">
+          <option value="pizzusneið og gos">Pizzusneið og gos</option>
+          <option value="Kaffi og kaka">Kaffi og kaka</option>
+          <option value="Engan mat">Engan mat</option>
+        </select>
+        <label>
+          Ofnæmi?
+          <input name="ofnæmi" type="checkbox" />
+        </label>
+        <label>
+          Annað sem við eigum að vita?
+          <textarea name="eigum-að-vita" id="eigum-að-vita"></textarea>
+        </label>
       </form>
       <h3>Þínar upplýsingar</h3>
       <form>
         <label>
           Nafn:
-          <input type="text" id="nafn" required>
+          <input type="text" id="nafn" required />
         </label>
         <label>
           Netfang:
-          <input type="text" id="netfang" placeholder="daemi@daemi.is" required>
+          <input
+            type="text"
+            id="netfang"
+            placeholder="daemi@daemi.is"
+            required
+          />
         </label>
         <label>
           Sími:
-          <input type="text" id="simi" placeholder="000-0000" required>
+          <input type="text" id="simi" placeholder="000-0000" required />
         </label>
       </form>
       <h3>Samþykkja og panta</h3>
       <form>
-        <lable>
+        <label>
           Ég samþykki skilmála Spilabúðarinnar
-          <input name="skilmálar" type="checkbox">
-        </lable>
+          <input name="skilmálar" type="checkbox" />
+        </label>
         <button>Panta</button>
       </form>
       <a href="../index.html">Aftur á forsíðu</a>
     </main>
     <footer>
+      <section>
         <h4>Opnunartími</h4>
         <dl>
           <dt>Mánudagar</dt>
@@ -105,20 +130,31 @@
           <dt>Sunnudaga</dt>
           <dd>12:00-22:00</dd>
         </dl>
+      </section>
+
+      <section>
         <h4>Hér erum við</h4>
         <p>
-          Spilabúðin ehf.<br/>
-          Spilagata 1<br/>
-          101 Reykjavík<br/>
-          Sími 123-4567<br/>
+          Spilabúðin ehf.<br />
+          Spilagata 1<br />
+          101 Reykjavík<br />
+          Sími 123-4567<br />
           spilabudin@example.org
         </p>
+      </section>
+
+      <section>
         <h4>Samfélagsmiðlar</h4>
         <ul>
-          <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
+          <li>
+            <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+          </li>
           <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
-          <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
+          <li>
+            <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+          </li>
         </ul>
-      </footer>
+      </section>
+    </footer>
   </body>
 </html>

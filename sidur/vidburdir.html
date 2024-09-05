@@ -2,31 +2,49 @@
 <html lang="is">
   <head>
     <meta charset="utf-8" />
+    <meta name="description" content="það eru geggjaðir viðburðir í boði hjá spilabúðinni"/>
+    <meta property="og:title" content="Viðburðir hjá spilabúðinni"/>
+    <meta property="og:description" content="Það eru geggjaðir viðburðir í boði hjá spilabúðinni"/>
+    <meta property="og:image" content="..myndir/sharing.jpg">
     <title>Viðburðir</title>
   </head>
   <body>
-    <h1>Viðburðir</h1>
-    <a href="#efni">Beint í efni</a>
-    <nav> 
-     <ul>
-      <li><a href="../index.html">Forsíða</a></li>
-      <li><a href="spil.html">Spil</a></li>
-      <li><strong>Viðburðir</strong></li>
-      <li><a href="form.html">Skrá mig á púslkvöld</a></li>
-     </ul>
+    <header>
+      <h1>Viðburðir</h1>
+    </header>
+    <p class="sr-only"><a href="#efni">Beint í efni</a></p>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Forsíða</a></li>
+        <li><a href="spil.html">Spil</a></li>
+        <li><strong>Viðburðir</strong></li>
+        <li><a href="form.html">Skrá mig á púslkvöld</a></li>
+      </ul>
     </nav>
     <main id="efni">
-        <h2>Púslkvöld</h2>
-        <img src="../myndir/puzzle.jpg" alt="næstum klárað púsl" width="800"/>
-        <p>Komdu á púslukvöld í spilabúðina. Við bjóðum upp á púsluspil og góða stemningu. Byrjum snemma og endum seint. Allt frá 50 bitum upp í 5000 bita púsl.</p>
-        <a href="form.html">Skráðu þig hér</a>
-        <h2>Ticket to Ride</h2>
-        <img src="../myndir/ticket-to-ride.jpg" alt="Ticket to ride spilið" width="800"/>
-        <p>Elskar þú lestir og leiki? Komdu á Ticket to Ride viðburð í spilabúðina. Spilum allan daginn, bókaðu klukkustund eða lengur.</p>
-        <a href="form.html">Skrá mig á Ticket to Ride</a>
-        <a href="../index.html">Aftur á forsíðu</a>
+      <h2>Púslkvöld</h2>
+      <img src="../myndir/puzzle.jpg" alt="næstum klárað púsl" width="800" />
+      <p>
+        Komdu á púslukvöld í spilabúðina. Við bjóðum upp á púsluspil og góða
+        stemningu. Byrjum snemma og endum seint. Allt frá 50 bitum upp í 5000
+        bita púsl.
+      </p>
+      <a href="form.html">Skráðu þig hér</a>
+      <h2>Ticket to Ride</h2>
+      <img
+        src="../myndir/ticket-to-ride.jpg"
+        alt="Ticket to ride spilið"
+        width="800"
+      />
+      <p>
+        Elskar þú lestir og leiki? Komdu á Ticket to Ride viðburð í spilabúðina.
+        Spilum allan daginn, bókaðu klukkustund eða lengur.
+      </p>
+      <a href="form.html">Skrá mig á Ticket to Ride</a>
+      <a href="../index.html">Aftur á forsíðu</a>
     </main>
     <footer>
+      <section>
         <h4>Opnunartími</h4>
         <dl>
           <dt>Mánudagar</dt>
@@ -40,20 +58,31 @@
           <dt>Sunnudaga</dt>
           <dd>12:00-22:00</dd>
         </dl>
+      </section>
+
+      <section>
         <h4>Hér erum við</h4>
         <p>
-          Spilabúðin ehf.<br/>
-          Spilagata 1<br/>
-          101 Reykjavík<br/>
-          Sími 123-4567<br/>
+          Spilabúðin ehf.<br />
+          Spilagata 1<br />
+          101 Reykjavík<br />
+          Sími 123-4567<br />
           spilabudin@example.org
         </p>
+      </section>
+
+      <section>
         <h4>Samfélagsmiðlar</h4>
         <ul>
-          <li><a href="https://www.facebook.com/HaskoliIslands/">Facebook</a></li>
+          <li>
+            <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+          </li>
           <li><a href="https://www.youtube.com/user/HIvarp">YouTube</a></li>
-          <li><a href="https://www.instagram.com/haskoli_islands/">Instagram</a></li>
+          <li>
+            <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+          </li>
         </ul>
-      </footer>
+      </section>
+    </footer>
   </body>
 </html>
